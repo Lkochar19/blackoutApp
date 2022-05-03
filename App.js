@@ -4,7 +4,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <View style={styles.roundedRectangle}>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +14,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#34459F',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  roundedRectangle: {
+    width: 290,
+    height: 80,
+    backgroundColor: "black",
+    borderRadius: 50,
+  }
 });
+
